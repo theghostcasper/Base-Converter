@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Base Converter</title>
+	<link rel="stylesheet"  href="/stylesheets/style.css">
+</head>
+<body>
+	<h1>Base Converter App</h1>
+	<form method="POST" action="/">
+		<div class="wrapper">
+			<label>Number: | </label>
+			<input class="main-input" type="text" name="number" required placeholder="Enter the Number">
+		</div>
+		<div class="wrapper">
+			<label for="from">From: | </label>
+			<select   name="from" id="bases">
+				<option value="null">Please choose the base</option>
+				<option value="16">Hex</option>
+				<option value="10">Dec</option>
+				<option value="8">Octal</option>
+				<option value="2">Binary</option>
+			</select>
+		</div>
+		<div class="wrapper">
+			<label for="to">To: | </label>
+			<select  name="to" id="bases">
+				<option value="null">Please choose the base</option>
+				<option value="16">Hex</option>
+				<option value="10">Dec</option>
+				<option value="8">Octal</option>
+				<option value="2">Binary</option>
+			</select>
+			<input  type="submit" value="convert" >
+		</div>
+	</form>
+	
+	<div class="wrapper">
+		<h2><span>The output is: </span><%= output %></h2>
+	</div>
+	
+
+</body>
+</html>
